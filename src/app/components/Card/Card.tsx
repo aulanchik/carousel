@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ card }) => {
     <div key={card.id} className="bg-elephant max-w-sm overflow-hidden">
       <Image
         className="rounded-[20px] p-2"
-        style={{ aspectRatio: "3 / 2" }}
+        style={{ aspectRatio: 4 / 3, objectFit: "cover" }}
         src={checkUrl(url)}
         height={height}
         width={width}
