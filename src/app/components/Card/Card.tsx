@@ -21,17 +21,17 @@ const Card: React.FC<CardProps> = ({ card }) => {
   return (
     <div key={card.id} className="bg-elephant max-w-sm overflow-hidden">
       <Image
-        className="rounded-[26px] p-2"
+        className="rounded-[20px] p-2"
         style={{ aspectRatio: "3 / 2" }}
         src={checkUrl(url)}
         height={height}
         width={width}
         alt={imgTitle}
       />
-      <div className="px-2 pb-6">
-        <p className="text-white font-bold text-md">{title}</p>
+      <div className="px-2 pb-4">
+        <p className="text-white font-bold text-md line-clamp-2">{title}</p>
         <a
-          className="inline-flex rounded-full text-elephant bg-white font-bold px-3 py-1 place-items-center mt-2 text-xs"
+          className="inline-flex rounded-full text-elephant bg-white font-bold px-3 py-2 place-items-center mt-2 text-xs"
           href={linkUrl}
         >
           <span>{linkText}</span>
