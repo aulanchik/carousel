@@ -25,4 +25,6 @@ type CarouselItemType = {
   image: ImageType;
 };
 
-export type { CarouselItemType, ImageDetailsType, ImageType };
+type CarouselDataType = CarouselItemType[] | undefined;
+
+export type { CarouselDataType, CarouselItemType, ImageDetailsType, ImageType };

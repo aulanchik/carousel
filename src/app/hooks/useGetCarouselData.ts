@@ -21,6 +21,7 @@ const useGetCarouselData = () => {
         setData(jsonData);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setData([]);
       } finally {
         setLoading(false);
       }
