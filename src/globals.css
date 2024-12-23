@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-elephant max-w-sm overflow-hidden rounded-lg;
+  }
+
+  .card-img {
+    @apply rounded-[20px] p-2 object-cover aspect-[4/3];
+  }
+
+  .card-content {
+    @apply px-2 pb-4;
+  }
+
+  .card-title {
+    @apply text-white font-bold line-clamp-2;
+  }
+
+  .card-link {
+    @apply inline-flex rounded-full text-elephant bg-white font-bold px-3 py-2 items-center mt-2 text-xs;
+  }
+
+  .card-icon {
+    @apply h-5 w-5 ml-2;
+  }
+}
+
+@layer components {
+  .carousel {
+    @apply flex flex-col bg-elephant rounded-lg;
+  }
+
+  .carousel-header {
+    @apply flex items-center justify-between px-2;
+  }
+
+  .carousel-header-text {
+    @apply text-white py-4;
+  }
+
+  .carousel-title {
+    @apply font-bold;
+  }
+
+  .carousel-subtitle {
+    @apply font-light text-sm;
+  }
+
+  .carousel-controls {
+    @apply flex gap-4;
+  }
+
+  .carousel-btn {
+    @apply text-white hover:opacity-100;
+  }
+
+  .opacity-low {
+    @apply opacity-40;
+  }
+
+  .carousel-content {
+    @apply flex justify-center items-center;
+  }
+
+  .carousel-footer {
+    @apply bg-blackPearl rounded-b-lg;
+  }
+
+  .carousel-footer-text {
+    @apply flex items-center space-x-2 float-right p-2;
+  }
+
+  .carousel-footer-label {
+    @apply text-white font-light text-xs;
+  }
+}

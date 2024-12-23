@@ -1,7 +1,7 @@
 "use client";
 
-import { Carousel } from "@/app/components";
-import { useGetCarouselData } from "@/app/hooks";
+import { Carousel } from "@/components";
+import { useGetCarouselData } from "@/hooks";
 
 export default function Home() {
   const { data } = useGetCarouselData();
