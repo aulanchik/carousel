@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { poppins } from "@/app/fonts";
-import "./globals.css";
+import { poppins } from "@/fonts";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Carousel",
