@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { CarouselItemType } from "@/app/types";
+import { CarouselItemType } from "@/types";
 
 const useGetCarouselData = () => {
   const [data, setData] = useState<CarouselItemType[]>();
   const [loading, setLoading] = useState<boolean>(true);
 
-  const url =
-    "https://content.inyourarea.co.uk/ext/search?type=technicalTaskCarouselItem&env=dev";
+  const url = process.env.NEXT_PUBLIC_API_URL!;
 
   useEffect(() => {
     const fetchData = async () => {
